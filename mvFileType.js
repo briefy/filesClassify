@@ -38,7 +38,7 @@ module.exports = (fileType, destPath) => {
         const writeStream = fs.createWriteStream(`${dp}/${path.basename(file)}`);
         readStream.pipe(writeStream);
         readStream.on('end', () => {
-          // fs.unlink(file, () => {});
+          fs.unlink(file, () => {});
         });
         // } catch (e) {
         //   console.log(e.message);
