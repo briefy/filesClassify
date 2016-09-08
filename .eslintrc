@@ -1,0 +1,11 @@
+{
+  "extends": "eslint-config-airbnb",
+  "env": {
+
+  },
+  "rules": {
+    "eol-last": "off",
+    "global-require": "off",
+    "no-console": "off"
+  }
+}
